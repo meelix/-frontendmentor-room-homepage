@@ -1,5 +1,6 @@
 import './main.css'
-import '../swiper-bundle.js'
+// import '../swiper-bundle.esm.browser.min.js'
+import Swiper, { Navigation, EffectFade } from 'swiper';
 
 /* --------------------------------- swiper --------------------------------- */
 const swiper = new Swiper('.swiper-container', {
@@ -12,6 +13,7 @@ const swiper = new Swiper('.swiper-container', {
   fadeEffect: {
     crossFade: true
   },
+  modules: [Navigation, EffectFade],
 });
 
 /* ------------------------------- logo color ------------------------------- */
